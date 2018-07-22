@@ -1,13 +1,13 @@
 
 import random
-import replit
+import os
 
 scoreabang = 0
 scoreadik = 0
 
 def main():
   global scoreabang, scoreadik
-  replit.clear()
+  os.system("clear")
   print("=====")
   print("Score Abang : " + str(scoreabang))
   print("Score Adik : " + str(scoreadik))
