@@ -1,27 +1,27 @@
 
 import random
-import replit
+import os
 
 scoreabang = 0
 scoreadik = 0
 
 def main():
   global scoreabang, scoreadik
-  replit.clear()
+  os.system("clear")
   print("=====")
   print("Score Abang : " + str(scoreabang))
   print("Score Adik : " + str(scoreadik))
   print("=====")
   abang = random.randint(1,10)
   adik = random.randint(1,10)
-  if (abang > adik):
+  if (abang > adik): 
     print("abang menang!")
     scoreabang += 1
   else:
     print("adik menang!")
     scoreadik += 1
   print("")
-  dummy = raw_input("enter untuk mencoba lagi")
+  dummy = raw_input("tekan tombol enter untuk mencoba lagi")
   main()
 
 main()
